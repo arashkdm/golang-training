@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var a = 50
+var b int
+
 func main() {
 	x := 42
 	fmt.Println(x)
@@ -11,4 +14,12 @@ func main() {
 	fmt.Println(y)
 	z := "Bond"
 	fmt.Println(z)
+	fmt.Println(a)
+
+	foo()
+}
+
+func foo() {
+	fmt.Println("again: ", a)
+	fmt.Println(b)
 }
